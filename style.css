@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 400;
+
+    src: url("/fonts/Geometria.woff") format("woff");
+}
+@font-face {
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 600;
+
+    src: url("/fonts/Geometria-Bold.woff") format("woff");
+}
+
+body {
+    font-family: "Geometria", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* -------------header */
+.header {
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: 1fr 1fr 100px;
+    grid-template-areas: "logo nav search";
+    align-items: center;
+    justify-items: start;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+.header__logo-wrapper {
+    grid-area: logo;
+    justify-self: flex-end;
+}
+.header__logo-wrapper:hover {
+}
+.logo {
+    font-weight: 600;
+    color: #da362d;
+    font-size: 26px;
+    transition: colro 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+.logo:hover {
+    color: #9e2019;
+}
+.header__nav {
+    grid-area: nav;
+}
+
+.header__nav ul {
+    display: flex;
+    gap: 10px;
+}
+.header__nav a {
+    transition: color 0.3s;
+    padding: 15px;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.header__nav a:hover {
+    color: #da362d;
+    transform: translateY(-3px);
+}
+.header__nav a:active {
+    color: #9e2019;
+}
+.header__nav a::after {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #da362d;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+.header__nav a:hover::after {
+    opacity: 1;
+}
+.header__nav a:active::after {
+    background-color: #9e2019;
+}
+
+.search {
+    grid-area: search;
+    transition: 0.3s;
+}
+.search:hover svg {
+    fill: #da362d;
+}
+.search:active svg {
+    fill: #9e2019;
+}
+
+/* ---------------main */
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+    grid-template-rows: 3fr 1fr 3fr;
+    grid-template-areas:
+        "slider-arrows healthy thristy thristy"
+        "slider-arrows healthy slider-dots orange"
+        "freshy healthy slider-dots orange";
+}
+
+/* --------------- slider-arrows */
+.slider-arrows {
+    grid-area: slider-arrows;
+    position: relative;
+}
+.slider-arrows__nav {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.slider-arrows__arrow {
+    color: #ffffff;
+    font-size: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s;
+}
+.btn {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 2px solid #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: all 0.3s;
+}
+.slider-arrows__arrow:hover,
+.btn:hover {
+    color: #9e2019;
+    border: 2px solid #9e2019;
+}
+.slider-arrows__arrow:active,
+.btn:active {
+    opacity: 0.7;
+}
