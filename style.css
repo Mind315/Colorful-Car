@@ -23,6 +23,9 @@ body {
     max-width: 1920px;
     margin: 0 auto;
 }
+.text-section {
+    padding: 40px;
+}
 
 /* -------------header */
 .header {
@@ -109,9 +112,9 @@ body {
     grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
     grid-template-rows: 3fr 1fr 3fr;
     grid-template-areas:
-        "slider-arrows healthy thristy thristy"
-        "slider-arrows healthy slider-dots orange"
-        "freshy healthy slider-dots orange";
+        "slider-arrows about red section-hover"
+        "slider-arrows about slider-dots section-hover"
+        "green about slider-dots orange";
 }
 
 /* --------------- slider-arrows */
@@ -162,6 +165,41 @@ body {
 .btn:active {
     opacity: 0.7;
 }
+/* ----------------about */
+.about {
+    grid-area: about;
+    background-color: rgb(245, 220, 78);
+}
+
+
+/* -------- green description */
+.green-description {
+    grid-area: green;
+    background-color: rgb(124, 191, 23);
+}
+.green-description__title,
+.red-description__title,
+.about h2 {
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.green-description p,
+.red-description p,
+.about p {
+    font-size: 18px;
+}
+
+/* ------------------ red description */
+.red-description {
+    grid-area: red;
+    background-color: #9b1800;
+    color: #ffffff;
+}
+
 
 /* -------slider-dots */
 
@@ -214,3 +252,72 @@ body {
     background-color: transparent;
     border: 1px solid #ffffff;
 }
+
+/* ----------section - hover */
+.section-hover {
+    grid-area: section-hover;
+}
+
+.hover-menu {
+    position: relative;
+    overflow: hidden;
+    min-width: 340px;
+    max-width: 480px;
+    max-height: 593px;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .hover-menu * {
+    box-sizing: border-box;
+  }
+  
+  .hover-menu img {
+    position: relative;
+    max-width: 100%;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .hover-menu div {
+    position: absolute;
+    top: 0;
+    left: -120px;
+    width: 120px;
+    height: 100%;
+    padding: 8px 4px;
+    background: #000;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hover-menu div a {
+    display: block;
+    line-height: 2;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    padding: 5px 15px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .hover-menu div a:hover {
+    text-decoration: underline;
+  }
+  
+  .hover-menu:hover img {
+    opacity: 0.5;
+    right: -120px;
+  }
+  
+  .hover-menu:hover div {
+    left: 0;
+    opacity: 1;
+  }
