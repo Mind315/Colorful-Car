@@ -114,14 +114,13 @@ body {
     grid-template-areas:
         "slider-arrows about red section-hover"
         "slider-arrows about slider-dots section-hover"
-        "green about slider-dots orange";
+        "green about slider-dots blue";
 }
 
 /* --------------- slider-arrows */
 .slider-arrows {
     grid-area: slider-arrows;
     position: relative;
-
 }
 .slider-arrows__items-wrapper {
     width: 100%;
@@ -140,7 +139,7 @@ body {
 }
 .slider-arrows__arrow {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 20px;
     border: 2px solid #ffffff;
     border-radius: 50%;
     width: 50px;
@@ -171,7 +170,6 @@ body {
     background-color: rgb(245, 220, 78);
 }
 
-
 /* -------- green description */
 .green-description {
     grid-area: green;
@@ -179,6 +177,7 @@ body {
 }
 .green-description__title,
 .red-description__title,
+.blue-description__title,
 .about h2 {
     font-size: 34px;
     font-weight: 600;
@@ -189,6 +188,7 @@ body {
 }
 .green-description p,
 .red-description p,
+.blue-description p,
 .about p {
     font-size: 18px;
 }
@@ -200,6 +200,12 @@ body {
     color: #ffffff;
 }
 
+/* --------- blue description */
+.blue-description {
+    grid-area: blue;
+    background-color: blue;
+    color: #ffffff;
+}
 
 /* -------slider-dots */
 
@@ -225,7 +231,8 @@ body {
     display: flex;
 }
 .slider-dots__nav {
-    display: flex;justify-content: center;
+    display: flex;
+    justify-content: center;
     gap: 5px;
     align-items: center;
     position: absolute;
@@ -239,14 +246,14 @@ body {
     background-color: #ffffff;
     border-radius: 50%;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 }
 .slider-dots__nav-item:hover {
     background-color: #9e2019;
     border: 2px solid #9e2019;
 }
 .slider-dots__nav-item:active {
-    opacity: .8;
+    opacity: 0.8;
 }
 .slider-dots__nav-item--active {
     background-color: transparent;
@@ -263,27 +270,27 @@ body {
     overflow: hidden;
     min-width: 340px;
     max-width: 480px;
-    max-height: 593px;
+    max-height: 595px;
     width: 100%;
     background: #000;
     text-align: center;
     box-sizing: border-box;
-  }
-  
-  .hover-menu * {
+}
+
+.hover-menu * {
     box-sizing: border-box;
-  }
-  
-  .hover-menu img {
+}
+
+.hover-menu img {
     position: relative;
     max-width: 100%;
     top: 0;
     right: 0;
     opacity: 1;
     transition: 0.3s ease-in-out;
-  }
-  
-  .hover-menu div {
+}
+
+.hover-menu div {
     position: absolute;
     top: 0;
     left: -120px;
@@ -295,29 +302,28 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .hover-menu div a {
+}
+
+.hover-menu div a {
     display: block;
     line-height: 2;
     color: #fff;
     text-decoration: none;
-    opacity: 0.8;
     padding: 5px 15px;
     position: relative;
     transition: 0.3s ease-in-out;
-  }
-  
-  .hover-menu div a:hover {
-    text-decoration: underline;
-  }
-  
-  .hover-menu:hover img {
+}
+
+.hover-menu div a:hover {
+    color: #9e2019;
+}
+
+.hover-menu:hover img {
     opacity: 0.5;
     right: -120px;
-  }
-  
-  .hover-menu:hover div {
+}
+
+.hover-menu:hover div {
     left: 0;
     opacity: 1;
-  }
+}
