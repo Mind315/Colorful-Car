@@ -31,8 +31,8 @@ body {
 .header {
     display: grid;
     grid-template-rows: max-content;
-    grid-template-columns: 1fr 1fr 100px;
-    grid-template-areas: "logo nav search";
+    grid-template-columns: 2fr 1fr 2.5fr 0.5fr;
+    grid-template-areas: " empty logo nav search";
     align-items: center;
     justify-items: start;
     padding: 20px 0;
@@ -40,7 +40,7 @@ body {
 }
 .header__logo-wrapper {
     grid-area: logo;
-    justify-self: flex-end;
+    justify-self: flex-start;
 }
 .header__logo-wrapper:hover {
 }
@@ -69,6 +69,9 @@ body {
     position: relative;
     display: inline-block;
     transition: transform 0.3s;
+}
+.header__nav a:nth-child(1) {
+    padding-left: 0;
 }
 .header__nav a:hover {
     color: #da362d;
