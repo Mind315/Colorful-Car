@@ -288,6 +288,7 @@ body {
 .hover-menu img {
     position: relative;
     max-width: 100%;
+    min-height: 613px;
     top: 0;
     right: 0;
     opacity: 1;
@@ -418,11 +419,167 @@ body {
 }
 .aside__item {
     padding: 20px;
-    width: 475px;
     transition: 1s;
 }
 .aside__item h2 {
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+/*================== Adaptive ========================*/
+/* ================================================== */
+@media screen and (max-width: 1520px) {
+    .header {
+        display: grid;
+        grid-template-rows: max-content;
+        grid-template-columns: 2fr 0.5fr 2.5fr 0.5fr;
+        grid-template-areas: "logo empty nav search";
+    }
+    .main {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1.5fr;
+        grid-template-rows: 3fr 1fr 3fr 3fr;
+        grid-template-areas:
+            "slider-arrows about red"
+            "slider-arrows about slider-dots"
+            "green about slider-dots"
+            "section-hover blue blue";
+    }
+    .hover-menu {
+        max-width: 100%;
+        max-height: 40vw;
+    }
+    .header__logo-wrapper {
+        justify-self: center;
+    }
+    .aside {
+        display: none;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .text-section {
+        padding: 20px;
+    }
+    .green-description__title,
+    .red-description__title,
+    .blue-description__title,
+    .about h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .green-description p,
+    .red-description p,
+    .blue-description p,
+    .about p {
+        font-size: 16px;
+    }
+    .footer {
+        padding: 15px 0;
+    }
+}
+@media screen and (max-width: 860px) {
+    .header__nav ul {
+        gap: 0;
+    }
+    .green-description__title,
+    .red-description__title,
+    .blue-description__title,
+    .about h2 {
+        font-size: 20px;
+    }
+    .green-description p,
+    .red-description p,
+    .blue-description p,
+    .about p {
+        font-size: 13px;
+    }
+    .footer {
+        grid-template-columns: 2fr 1fr 1.5fr;
+        grid-template-areas: "social form form";
+    }
+}
+@media screen and (max-width: 726px) {
+    .header {
+        grid-template-columns: 2fr 2fr 0.5fr;
+        grid-template-areas: "logo nav search";
+    }
+    .header__nav a {
+        padding: 10px;
+    }
+    .main {
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 3fr 3fr 3fr 3fr 2fr;
+        grid-template-areas:
+            "slider-arrows about"
+            "green about"
+            "red slider-dots"
+            "section-hover slider-dots"
+            "blue blue";
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .header__nav {
+        display: none;
+    }
+    .main {
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 3fr 1.5fr 1fr 3fr 1.5fr;
+        grid-template-areas:
+            "slider-arrows about"
+            "green about"
+            "red red"
+            "section-hover slider-dots"
+            "blue blue";
+    }
+    .hover-menu {
+        max-height: 100%;
+    }
+    .form label {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .form__wrapper {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .header {
+        grid-template-columns: 2fr 0.5fr 0.5fr;
+        grid-template-areas: "logo nav search";
+    }
+    .main {
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 1.5fr 0.5fr 1.5fr 1.5fr 0.5fr;
+        grid-template-areas:
+            "slider-arrows slider-arrows"
+            "green about"
+            "red red"
+            "section-hover section-hover"
+            "slider-dots slider-dots"
+            "blue blue";
+    }
+    .footer {
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: "social form";
+    }
+}
+@media screen and (max-width: 460px) {
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "social"
+            "form";
+        justify-items: center;
+    }
+    .form label {
+        text-align: center;
+    }
+    .form__wrapper {
+        flex-direction: row;
+    }
 }
