@@ -108,6 +108,77 @@
                     </figure>
                 </div>
             </main>
+            <footer class="footer">
+                <div class="social text-section">
+                    <ul class="social__list">
+                        <li>
+                            <a href="#" class="social__item"><img src="img/fb.svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="social__item"><img src="img/inst.svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="social__item"><img src="img/linked.svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="social__item"><img src="img/skype.svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="social__item"><img src="img/twit.svg" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <form action="" class="form">
+                    <label for="mail">contact us</label>
+                    <div class="form__wrapper">
+                        <input type="email" name="mail" id="mail" placeholder="email" />
+                        <button type="submit">submit</button>
+                    </div>
+                </form>
+                <aside class="aside">
+                    <div class="aside__text-wrapper">
+                        <div class="aside__item-list">
+                            <div class="aside__item">
+                                <h2>title 1</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, placeat? Impedit ducimus eveniet sit!
+                                    Soluta impedit deserunt neque perferendis veniam. Earum exercitationem aperiam sit sunt quo quia. Non,
+                                    earum repellat!
+                                </p>
+                            </div>
+                            <div class="aside__item">
+                                <h2>title 2</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisi, cupiditate numquam, sed consequuntur quam quo
+                                    similique!
+                                </p>
+                            </div>
+                            <div class="aside__item">
+                                <h2>title 3</h2>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim rem voluptate tempore sed quasi iste quam
+                                    libero cumque! Architecto in sapiente id tenet
+                                </p>
+                            </div>
+                            <div class="aside__item">
+                                <h2>title 4</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minus, voluptates quaerat pariatur nihil
+                                    quo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </footer>
         </div>
+        <script>
+            const asideList = document.querySelector(".aside__item-list");
+            let itemHeight = asideList.getBoundingClientRect().height / 4;
+
+            function asideTransform(itemHeight) {
+                asideList.style.transform = "translateY(-138px)";
+            }
+        </script>
     </body>
 </html>
