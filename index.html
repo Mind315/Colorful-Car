@@ -30,6 +30,9 @@
                     <div class="menu-button__line"></div>
                 </button>
                 <div class="burger-menu">
+                  <button type="button" class="menu-button inner-button">
+                    <div class="menu-button__line"></div>
+                </button>
                     <ul class="burger-menu__list">
                         <li class="burger-menu__item"><a href="#">HOME</a></li>
                         <li class="burger-menu__item"><a href="#">ABOUT</a></li>
@@ -51,7 +54,10 @@
             <main class="main">
                 <div class="slider-arrows">
                     <div class="slider-arrows__items-wrapper">
-                        <img src="img/slider-arrows1.jpg" alt="green car" class="slider-arrows__item" />
+                        <img class="slider-arrows__item" src="img/green-car.jpg" alt="green car" class="slider-arrows__item" />
+                        <img class="slider-arrows__item" src="img/green-car1.jpg" alt="green car" class="slider-arrows__item" />
+                        <img class="slider-arrows__item" src="img/green-car2.jpg" alt="green car" class="slider-arrows__item" />
+                        <img class="slider-arrows__item" src="img/green-car3.jpg" alt="green car" class="slider-arrows__item" />
                     </div>
 
                     <div class="slider-arrows__nav">
@@ -159,22 +165,6 @@
                 </aside>
             </footer>
         </div>
-        <script>
-            const burgerMenuList = document.querySelector(".burger-menu");
-            const burgerBg = document.querySelector(".burger-menu__bg");
-
-            const menuBurger = document.querySelector(".menu-button");
-            menuBurger.addEventListener("click", () => {
-                menuBurger.classList.toggle("menu-button--active");
-                burgerMenuList.classList.toggle("burger-menu--active");
-                burgerBg.classList.toggle("bg-lock");
-            });
-
-            burgerBg.addEventListener("click", () => {
-                menuBurger.classList.toggle("menu-button--active");
-                burgerMenuList.classList.toggle("burger-menu--active");
-                burgerBg.classList.toggle("bg-lock");
-            });
-        </script>
+        <script src="main.js"></script>
     </body>
 </html>

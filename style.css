@@ -33,13 +33,29 @@ body {
     position: relative;
     display: none;
     z-index: 20;
+    transition: .5s;
 }
+.menu-button:hover {
+  box-shadow: 0 0 10px 2px rgba(255, 94, 94, 0.524);
+}
+.menu-button.menu-button--active {
+  visibility: hidden;
+  opacity: 0;
+  user-select: none;
+}
+.inner-button {
+  position: absolute;
+  top: 10px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
 .menu-button__line {
     display: block;
     width: 100%;
     height: 3px;
     background-color: #000000;
-    transition: 1.5s;
+    transition: .5s;
 }
 .menu-button:before,
 .menu-button:after {
@@ -50,7 +66,7 @@ body {
     background-color: #000000;
     position: absolute;
     left: 0;
-    transition: 0.3s 1s;
+    transition: 0.3s .6s;
 }
 .menu-button:before {
     top: 0;
@@ -87,19 +103,30 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 30px;
     z-index: 11;
 }
 .burger-menu__item {
     padding: 20px 50px;
+    width: 100%;
+    text-align: center;
     font-size: 22px;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
     border-bottom: 1px solid #9e2019;
+    transition: color .3s;
+}
+.burger-menu__item:hover, 
+.burger-menu__item:active {
+  color: #9b1800;
 }
 .burger-menu__item:first-child {
     border-top: 1px solid #9e2019;
+}
+.burger-menu__item:last-child {
+  border: none;
 }
 .burger-menu__active {
     right: 0;
@@ -224,6 +251,10 @@ body {
     height: 100%;
     filter: brightness(70%);
     display: flex;
+}
+.slider-arrows__item {
+ max-height: 595px;
+ width: 100%; 
 }
 .slider-arrows__nav {
     position: absolute;
@@ -539,9 +570,12 @@ body {
             "green about slider-dots"
             "section-hover blue blue";
     }
+    .slider-arrows__item {
+      max-height: 100%;
+    }
     .hover-menu {
         max-width: 100%;
-        max-height: 40vw;
+        max-height: 42vw;
     }
     .header__logo-wrapper {
         justify-self: center;
@@ -613,6 +647,9 @@ body {
             "section-hover slider-dots"
             "blue blue";
     }
+    .slider-arrows {
+      max-height: 310px;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -644,6 +681,9 @@ body {
     .form__wrapper {
         flex-direction: column;
         align-items: flex-end;
+    }
+    .slider-arrows {
+      max-height: 100%;
     }
 }
 
