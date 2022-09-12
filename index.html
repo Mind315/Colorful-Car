@@ -1,170 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="style.css" />
-        <title>Colorful Car</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                <div class="header__logo-wrapper">
-                    <a class="logo">COLORFUL CAR</a>
-                </div>
-
-                <nav class="header__nav">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">PRODUCTS</a></li>
-                        <li><a href="#">LOCATION</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </nav>
-
-                <!-- mobile burger items -->
-                <button type="button" class="menu-button">
-                    <div class="menu-button__line"></div>
-                </button>
-                <div class="burger-menu">
-                  <button type="button" class="menu-button inner-button">
-                    <div class="menu-button__line"></div>
-                </button>
-                    <ul class="burger-menu__list">
-                        <li class="burger-menu__item"><a href="#">HOME</a></li>
-                        <li class="burger-menu__item"><a href="#">ABOUT</a></li>
-                        <li class="burger-menu__item"><a href="#">PRODUCTS</a></li>
-                        <li class="burger-menu__item"><a href="#">CONTACT</a></li>
-                    </ul>
-                </div>
-                <div class="burger-menu__bg"></div>
-                <!-- ------------------- -->
-                <button type="button" class="search">
-                    <svg role="img" width="32" height="32" viewBox="0 0 24 24">
-                        <path
-                            d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275q-.425 0-.7-.275ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-                        ></path>
-                    </svg>
-                </button>
-            </header>
-
-            <main class="main">
-                <div class="slider-arrows">
-                    <div class="slider-arrows__items-wrapper">
-                        <img class="slider-arrows__item" src="img/green-car.jpg" alt="green car" class="slider-arrows__item" />
-                        <img class="slider-arrows__item" src="img/green-car1.jpg" alt="green car" class="slider-arrows__item" />
-                        <img class="slider-arrows__item" src="img/green-car2.jpg" alt="green car" class="slider-arrows__item" />
-                        <img class="slider-arrows__item" src="img/green-car3.jpg" alt="green car" class="slider-arrows__item" />
-                    </div>
-
-                    <div class="slider-arrows__nav">
-                        <button class="slider-arrows__arrow slider-arrows__arrow--left">&#9668;</button>
-                        <button class="btn slider-arrows__btn">start driving</button>
-                        <button class="slider-arrows__arrow slider-arrows__arrow--right">&#9658;</button>
-                    </div>
-                </div>
-                <div class="about text-section">
-                    <h2>About project</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae saepe, atque sed quidem praesentium rem? Dolor eos
-                        temporibus hic doloribus commodi.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae saepe, atque sed quidem praesentium rem? Dolor eos
-                        temporibus hic doloribus commodi. Cum nemo quos cumque commodi aliquam minima officiis?
-                    </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. quos cumque commodi aliquam minima officiis?</p>
-                </div>
-                <div class="green-description text-section">
-                    <h2 class="green-description__title">Best car from London</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ad deleniti voluptate rem magnam dicta odit animi.
-                        Culpa minima eveniet totam quia, id natus fugiat sunt, optio consequuntur praesentium omnis?
-                    </p>
-                </div>
-                <div class="red-description text-section">
-                    <h2 class="red-description__title">Bright colors</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ad deleniti voluptate rem magnam dicta odit animi.
-                        Culpa minima eveniet totam quia, id natus fugiat sunt, optio consequuntur praesentium omnis?
-                    </p>
-                </div>
-                <div class="blue-description text-section">
-                    <h2 class="blue-description__title">great quality</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ad deleniti voluptate rem magnam dicta odit animi.
-                        Culpa minima eveniet totam quia, id natus fugiat sunt, optio consequuntur praesentium omnis?
-                    </p>
-                </div>
-
-                <div class="slider-dots">
-                    <div class="slider-dots__items-wrapper">
-                        <img src="img/slider-dots1.jpg" alt="red car" class="slider-dots__item" />
-                    </div>
-
-                    <div class="slider-dots__btn-wrapper">
-                        <button class="btn slider-dots__btn">Start driving</button>
-                    </div>
-                    <div class="slider-dots__nav">
-                        <button class="slider-dots__nav-item"></button>
-                        <button class="slider-dots__nav-item slider-dots__nav-item--active"></button>
-                        <button class="slider-dots__nav-item"></button>
-                    </div>
-                </div>
-
-                <div class="section-hover">
-                    <figure class="hover-menu">
-                        <img src="img/hover-image.jpg" alt="blue car" />
-                        <div>
-                            <a href="#">Service</a>
-                            <a href="#">Pricing</a>
-                            <a href="#">Sell</a>
-                        </div>
-                    </figure>
-                </div>
-            </main>
-            <footer class="footer">
-                <div class="social text-section">
-                    <ul class="social__list">
-                        <li>
-                            <a href="#" class="social__item"><img src="img/fb.svg" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#" class="social__item"><img src="img/inst.svg" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#" class="social__item"><img src="img/linked.svg" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#" class="social__item"><img src="img/skype.svg" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#" class="social__item"><img src="img/twit.svg" alt="" /></a>
-                        </li>
-                    </ul>
-                </div>
-                <form action="" class="form">
-                    <label for="mail">contact us</label>
-                    <div class="form__wrapper">
-                        <input type="email" name="mail" id="mail" placeholder="email" />
-                        <button type="submit">submit</button>
-                    </div>
-                </form>
-                <aside class="aside">
-                    <div class="aside__text-wrapper">
-                        <div class="aside__item-list">
-                            <div class="aside__item">
-                                <h2>title 1</h2>
-                                <p>Lorem adipisicing ipsum ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Colorful Car</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo-wrapper">
+          <a class="logo">COLORFUL CAR</a>
         </div>
-        <script src="main.js"></script>
-    </body>
+
+        <nav class="header__nav">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">COLORS</a></li>
+            <li><a href="#">CONTACTS</a></li>
+          </ul>
+        </nav>
+
+        <!-- mobile burger items -->
+        <button type="button" class="menu-button">
+          <div class="menu-button__line"></div>
+        </button>
+        <div class="burger-menu">
+          <button type="button" class="menu-button inner-button">
+            <div class="menu-button__line"></div>
+          </button>
+          <ul class="burger-menu__list">
+            <li class="burger-menu__item"><a href="#">HOME</a></li>
+            <li class="burger-menu__item"><a href="#">ABOUT</a></li>
+            <li class="burger-menu__item"><a href="#">COLORS</a></li>
+            <li class="burger-menu__item"><a href="#">CONTACTS</a></li>
+          </ul>
+        </div>
+        <div class="burger-menu__bg"></div>
+        <!-- ------------------- -->
+        <button type="button" class="search">
+          <svg role="img" width="32" height="32" viewBox="0 0 24 24">
+            <path
+              d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275q-.425 0-.7-.275ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+            ></path>
+          </svg>
+        </button>
+      </header>
+
+      <main class="main">
+        <div class="slider-arrows">
+          <div class="slider-arrows__items-wrapper">
+            <img class="slider-arrows__item" src="img/green-car.jpg" alt="green car" class="slider-arrows__item" />
+            <img class="slider-arrows__item" src="img/green-car1.jpg" alt="green car" class="slider-arrows__item" />
+            <img class="slider-arrows__item" src="img/green-car2.jpg" alt="green car" class="slider-arrows__item" />
+            <img class="slider-arrows__item" src="img/green-car3.jpg" alt="green car" class="slider-arrows__item" />
+          </div>
+
+          <div class="slider-arrows__nav">
+            <button class="slider-arrows__arrow slider-arrows__arrow--left">&#9668;</button>
+            <button class="btn slider-arrows__btn">start driving</button>
+            <button class="slider-arrows__arrow slider-arrows__arrow--right">&#9658;</button>
+          </div>
+        </div>
+        <div class="about text-section">
+          <h2>About project</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae saepe, atque sed quidem praesentium rem? Dolor eos temporibus
+            hic doloribus commodi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae saepe, atque sed quidem praesentium rem? Dolor eos temporibus
+            hic doloribus commodi. Cum nemo quos cumque commodi aliquam minima officiis?
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. quos cumque commodi aliquam minima officiis?</p>
+        </div>
+        <div class="green-description text-section">
+          <h2 class="green-description__title">Best car from London</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ad deleniti voluptate rem magnam dicta odit animi. Culpa minima
+            eveniet totam quia, id natus fugiat sunt, optio consequuntur praesentium omnis?
+          </p>
+        </div>
+        <div class="red-description text-section">
+          <h2 class="red-description__title">Bright colors</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ad deleniti voluptate rem magnam dicta odit animi. Culpa minima
+            eveniet totam quia, id natus fugiat sunt, optio consequuntur praesentium omnis?
+          </p>
+        </div>
+        <div class="blue-description text-section">
+          <h2 class="blue-description__title">great quality</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ad deleniti voluptate rem magnam dicta odit animi. Culpa minima
+            eveniet totam quia, id natus fugiat sunt, optio consequuntur praesentium omnis?
+          </p>
+        </div>
+
+        <div class="slider-dots">
+          <div class="slider-dots__items-wrapper">
+            <img src="img/red-car.jpg" alt="red car" class="slider-dots__item" />
+            <img src="img/red-car1.jpg" alt="red car" class="slider-dots__item" />
+            <img src="img/red-car2.jpg" alt="red car" class="slider-dots__item" />
+            <img src="img/red-car3.jpg" alt="red car" class="slider-dots__item" />
+          </div>
+
+          <div class="slider-dots__btn-wrapper">
+            <button class="btn slider-dots__btn">Start driving</button>
+          </div>
+          <div class="slider-dots__nav">
+            <!-- <button class="slider-dots__nav-item"></button> -->
+            <!-- <button class="slider-dots__nav-item slider-dots__nav-item--active"></button> -->
+            <!-- <button class="slider-dots__nav-item"></button> -->
+          </div>
+        </div>
+
+        <div class="section-hover">
+          <figure class="hover-menu">
+            <img src="img/hover-image.jpg" alt="blue car" />
+            <div>
+              <a href="#">Service</a>
+              <a href="#">Pricing</a>
+              <a href="#">Sell</a>
+            </div>
+          </figure>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="social text-section">
+          <ul class="social__list">
+            <li>
+              <a href="#" class="social__item"><img src="img/fb.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="social__item"><img src="img/inst.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="social__item"><img src="img/linked.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="social__item"><img src="img/skype.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="social__item"><img src="img/twit.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <form action="" class="form">
+          <label for="mail">contact us</label>
+          <div class="form__wrapper">
+            <input type="email" name="mail" id="mail" placeholder="email" />
+            <button type="submit">submit</button>
+          </div>
+        </form>
+        <aside class="aside">
+          <div class="aside__text-wrapper">
+            <div class="aside__item-list">
+              <div class="aside__item">
+                <h2>title 1</h2>
+                <p>Lorem adipisicing ipsum ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet elit.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
