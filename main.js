@@ -1,3 +1,18 @@
+//seaarch
+const searchBtn = document.querySelector('.search__button');
+const inputSearch = document.querySelector('.search__input');
+
+searchBtn.addEventListener('click', () => {
+  inputSearch.classList.add('active');
+  setTimeout(() => {
+    inputSearch.classList.remove('active');
+  }, 20000);
+});
+inputSearch.addEventListener('blur', () => {
+  inputSearch.classList.remove('active');
+});
+
+//burger
 const burgerMenuList = document.querySelector('.burger-menu');
 const burgerBg = document.querySelector('.burger-menu__bg');
 

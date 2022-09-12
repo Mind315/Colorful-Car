@@ -209,12 +209,29 @@ body {
 .search {
   grid-area: search;
   transition: 0.3s;
+  position: relative;
 }
 .search:hover svg {
   fill: #da362d;
 }
 .search:active svg {
   fill: #9e2019;
+}
+.search__input {
+  position: absolute;
+  top: 50%;
+  left: 250px;
+  width: 130px;
+  height: 40px;
+  padding: 5px;
+  z-index: 20;
+  transform: translateY(-50%);
+  border-radius: 2px;
+  border: 2px solid red;
+  transition: left 1s;
+}
+.search__input.active {
+  left: -50px;
 }
 
 /* ---------------main */
@@ -635,6 +652,9 @@ body {
   .footer {
     grid-template-columns: 2fr 1fr 1.5fr;
     grid-template-areas: 'social form form';
+  }
+  .search__input.active {
+    left: -80px;
   }
 }
 @media screen and (max-width: 726px) {
